@@ -322,6 +322,67 @@ strong {
     border-radius: 50%;
     background: #559C4F; }
 
+.modal-header {
+  border: none;
+  padding: 0; }
+  .modal-header .close {
+    margin: 0;
+    padding: 0; }
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  padding: 0; }
+  .close:before, .close:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #559C4F; }
+  .close:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .close:after {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+
+.modal-body {
+  padding: 0; }
+
+.modal-content {
+  border: none;
+  padding: 40px 30px; }
+  .modal-content h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto 30px; }
+    .modal-content h2:before {
+      height: 3px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+  .modal-content .form label {
+    margin: 0 0 15px; }
+  .modal-content .form input {
+    color: #000;
+    border: 1px solid #559C4F; }
+    .modal-content .form input::-webkit-input-placeholder {
+      color: #4D4D4D; }
+    .modal-content .form input::-moz-placeholder {
+      color: #4D4D4D; }
+    .modal-content .form input::-ms-input-placeholder {
+      color: #4D4D4D; }
+    .modal-content .form input::placeholder {
+      color: #4D4D4D; }
+  .modal-content .form button {
+    margin: 0 auto; }
+
 header {
   padding: 40px 0; }
 
@@ -962,6 +1023,40 @@ footer {
 .address-dealers {
   max-width: 184px; }
 
+.map-contacts {
+  height: 571px; }
+
+.contacts {
+  margin: 10px 0 80px; }
+  .contacts h3 {
+    text-transform: uppercase;
+    color: #559C4F;
+    font-weight: bold;
+    font-size: 24px; }
+
+.address-box {
+  margin: 0 0 30px; }
+
+.contacts-box {
+  margin: 0 0 50px; }
+  .contacts-box:last-child {
+    margin: 0; }
+  .contacts-box h3 {
+    margin: 0 0 19px; }
+
+.list-phones {
+  font-size: 18px; }
+  .list-phones li {
+    margin: 0 0 6px; }
+    .list-phones li a {
+      color: #4D4D4D; }
+
+.list-mail {
+  font-size: 18px;
+  margin: 23px 0 0; }
+  .list-mail li a {
+    color: #559C4F; }
+
 .product h1 {
   font-size: 36px; }
 
@@ -1334,7 +1429,11 @@ footer {
       margin: 0 auto 30px;
       text-align: center; }
   .callback-img {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .list-phones, .list-mail {
+    font-size: 16px; }
+  .contacts h3 {
+    font-size: 20px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1376,7 +1475,15 @@ footer {
   .callback-wrapper .form {
     margin: 0 auto 20px; }
     .callback-wrapper .form button {
-      margin: 0 auto; } }
+      margin: 0 auto; }
+  .contacts-box {
+    margin: 0 0 30px; }
+  .list-mail {
+    margin: 20px 0 0; }
+  .map-contacts {
+    height: 400px; }
+  .contacts {
+    margin: 10px 0 40px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {

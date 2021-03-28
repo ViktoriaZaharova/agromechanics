@@ -91,7 +91,7 @@ a
 
   &:hover, &:focus
     text-decoration: none
-    
+
 input, textarea, select
   outline: none
   box-shadow: none
@@ -106,12 +106,14 @@ input, textarea, select
   color: #fff
   background: transparent
   box-sizing: border-box
+
   &:hover, &:focus
     outline: none
+
   &::placeholder
     color: #fff
 
-  
+
 label
   display: block
   width: 100%
@@ -128,6 +130,7 @@ button, .btn
     radius: 0
   transition: .3s ease
   font-family: $default-font
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -147,6 +150,7 @@ button, .btn
 .btn-white
   background: #FFFFFF
   color: #4D4D4D
+
   &:hover
     color: $text
     background: $yellow
@@ -159,6 +163,7 @@ button, .btn
   background: $accent
   color: #fff
   padding: 0 17px
+
   &:hover
     box-shadow: 0 4px 14px rgba(255, 184, 0, 0.3)
     background: $yellow
@@ -185,6 +190,7 @@ h1
   padding: 0 0 18px
   margin: 0 0 40px
   font-family: $font
+
   &:before
     content: ''
     position: absolute
@@ -202,6 +208,7 @@ h2
   text-transform: uppercase
   font-weight: bold
   padding: 0 0 15px
+
   &:before
     content: ''
     position: absolute
@@ -231,6 +238,7 @@ h2
   opacity: 1
   bottom: 172px
   left: 0
+
   li
     width: 20px
     height: 20px
@@ -238,10 +246,13 @@ h2
       radius: 50%
     margin: 0 20px 0 0
     cursor: pointer
+
     &:last-child
       margin: 0
+
     button
       display: none
+
   .slick-active
     background: #fff
 
@@ -277,18 +288,73 @@ strong
     position: relative
     padding: 0 0 0 12px
     margin: 0 0 20px
+
     &:last-child
       margin: 0
+
     &:before
       content: ''
       position: absolute
       left: 0
       top: 50%
-      transform: translate(0,-50%)
+      transform: translate(0, -50%)
       width: 6px
       height: 6px
       border-radius: 50%
       background: $accent
+
+.modal-header
+  border: none
+  padding: 0
+  .close
+    margin: 0
+    padding: 0
+
+.close
+  width: 20px
+  height: 20px
+  position: absolute
+  cursor: pointer
+  right: 10px
+  top: 10px
+  padding: 0
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: $accent
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.modal-body
+  padding: 0
+
+.modal-content
+  border: none
+  padding: 40px 30px
+  h2
+    font-size: 30px
+    text-align: center
+    margin: 0 auto 30px
+    &:before
+      height: 3px
+      left: 50%
+      transform: translate(-50%, 0)
+  .form
+    label
+      margin: 0 0 15px
+    input
+      color: #000
+      border: 1px solid $accent
+      &::placeholder
+        color: $text
+    button
+      margin: 0 auto
 
 @import "header"
 @import "footer"
