@@ -1,0 +1,232 @@
+@import "vars"
+
+.home-content
+  padding: 237px 0 187px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: -28px
+    top: 0
+    background: #fff
+    clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%)
+    width: 1065px
+    height: calc(100% - 132px)
+  >*
+    position: relative
+
+.decor
+  position: absolute
+  bottom: 0
+  background: #fff
+
+
+.decor1
+  width: 361px
+  height: 132px
+  right: -249px
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%)
+
+.decor2
+  width: 192px
+  height: 119px
+  right: -440px
+  bottom: 132px
+  clip-path: polygon(14% 0, 100% 0, 86% 100%, 0% 100%)
+
+.home
+  position: relative
+  h1
+    padding: 0
+    font-size: 54px
+    color: #000
+    margin: 0 0 52px
+    max-width: 426px
+    width: 100%
+    &:before
+      display: none
+  .container
+    position: relative
+    z-index: 1
+
+.contacts-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 75px 0 0
+
+.contacts-item
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  padding: 0 20px 0 0
+  margin: 0 20px 0 0
+  &:last-child
+    padding: 0
+    margin: 0
+    &:after
+      display: none
+  .phone
+    font-size: 18px
+    color: $accent
+    margin: 0 0 8px
+    &:last-child
+      margin: 0
+  .mail
+    font-size: 14px
+    color: $accent
+    margin: 5px 0 0
+  &:after
+    content: ''
+    display: inline-block
+    background: #FFE600
+    width: 2px
+    height: 42px
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+
+.home-slider
+  width: 100%
+  position: absolute
+  left: 0
+  top: 0
+  height: 100%
+  .slick-list, .slick-track
+    height: 100%
+
+.home-slider__img
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+//advantages
+.advantages
+  padding: 140px 0
+  position: relative
+  overflow: hidden
+  color: #fff
+  h2
+    text-align: center
+    color: #fff
+    margin: 0 auto 67px
+    &:before
+      left: 50%
+      transform: translate(-50%,0)
+      background: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: -20px
+    transform: translate(-50%,0)
+    width: calc(100% + 34px)
+    height: calc(100% + 270px)
+    background-blend-mode: multiply, normal
+    filter: blur(14px)
+    background: linear-gradient(0deg, #FFE600, #FFE600), url('../img/advantages-bg.jpeg') no-repeat center bottom
+      size: cover
+  .container
+    z-index: 1
+    position: relative
+
+.advantages-box
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 14px
+  text-transform: uppercase
+  max-width: 150px
+  width: 100%
+  font-weight: bold
+  &__icon
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 16px
+    background: #FFFFFF
+    width: 120px
+    height: 120px
+
+//.about
+.about
+  padding: 100px 0
+  h2
+    color: $accent
+
+.about-content-wrap
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%)
+  background: $accent
+  font-size: 14px
+  padding: 44px 76px
+  color: #fff
+  strong
+    font-weight: bold
+    margin: 0 0 20px
+    display: inline-block
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+
+.about-content-wrap-one
+  .box-text
+    max-width: 480px
+    width: 100%
+
+.about-img-wrap-one
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%)
+  min-width: 1274px
+  margin: 0 -50px 0 -200px
+  height: 530px
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+
+.about-img-wrap
+  max-width: 876px
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 1
+
+.about-content-wrap-two
+  padding: 157px 80px 29px 90px
+  margin: -140px 0 45px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.about-content
+  h3
+    text-transform: uppercase
+    color: $accent
+    font-size: 24px
+    font-weight: bold
+
+.about-img
+  display: flex
+  align-items: center
+  justify-content: center
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%)
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover

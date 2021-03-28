@@ -1,0 +1,243 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+    
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 10px
+  border: 1px solid #FFFFFF
+    radius: 5px
+  height: 40px
+  width: 100%
+  font-family: $default-font
+  font-size: 12px
+  color: #fff
+  background: transparent
+  box-sizing: border-box
+  &:hover, &:focus
+    outline: none
+  &::placeholder
+    color: #fff
+
+  
+label
+  display: block
+  width: 100%
+  margin: 0 0 24px
+
+button, .btn
+  outline: none
+  background: transparent
+  padding: 0
+  box-shadow: none
+  box-sizing: border-box
+  cursor: pointer
+  border: none
+    radius: 0
+  transition: .3s ease
+  font-family: $default-font
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 40px
+  padding: 0 30px
+  font-size: 12px
+  font-weight: bold
+  text-transform: uppercase
+  border-radius: 5px
+  width: fit-content
+
+.btn-white
+  background: #FFFFFF
+  color: #4D4D4D
+  &:hover
+    color: $text
+    background: $yellow
+
+.btn-yellow
+  background: $yellow
+  box-shadow: 0 4px 14px rgba(255, 184, 0, 0.3)
+
+.phone
+  font-size: 24px
+  font-weight: bold
+
+.mail
+  font-size: 18px
+  font-weight: bold
+
+.logo
+  display: flex
+  align-items: center
+
+h1
+  height: 100%
+  position: relative
+  color: $accent
+  font-size: 36px
+  font-weight: bold
+  text-transform: uppercase
+  padding: 0 0 18px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    height: 9px
+    background: $yellow
+    width: 170px
+
+h2
+  width: 100%
+  position: relative
+  font-size: 48px
+  text-transform: uppercase
+  font-weight: bold
+  padding: 0 0 15px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 170px
+    height: 9px
+    background: $yellow
+
+.wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-around
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  position: absolute
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 1
+  opacity: 1
+  bottom: 172px
+  left: 0
+  li
+    width: 20px
+    height: 20px
+    border: 3px solid #FFFFFF
+      radius: 50%
+    margin: 0 20px 0 0
+    cursor: pointer
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: #fff
+
+@import "header"
+@import "footer"
+@import "home"
+@import "catalog"
+@import "dealer"
+@import "contacts"
+@import "media"
+// Всегда в конце
