@@ -1,2 +1,85 @@
 @import "vars"
 
+.page
+  margin: 10px 0 40px
+
+.catalog
+  margin: 10px 0 80px
+
+.menu-catalog
+  width: 100%
+  font-size: 14px
+
+.menu-catalog__links
+  color: #559C4F
+  font-size: 14px
+  font-weight: bold
+  padding: 0 13px
+  text-transform: uppercase
+  &:hover
+    color: #000
+
+.menu-catalog__item
+  margin: 0 0 25px
+  &:last-child
+    margin: 0
+
+
+.submenu
+  margin: 10px 0 0
+  li
+    a
+      padding: 7px 10px 7px 28px
+      border-radius: 5px
+      color: #000
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 13px
+        top: 50%
+        transform: translate(0,-50%)
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        background: $accent
+      &:hover
+        box-shadow: 0 4px 14px rgba(255, 184, 0, 0.3)
+        background: $yellow
+        &:before
+          background: #000
+    .active
+      box-shadow: 0 4px 14px rgba(255, 184, 0, 0.3)
+      background: $yellow
+      &:before
+        background: #000
+
+.card-product
+  width: 100%
+  height: 100%
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25)
+  background: #fff
+  border-radius: 5px
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: 40px 15px 27px
+  &__img
+    height: 128px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin: 0 auto 33px
+    img
+      max-height: 100%
+  &__title
+    font-size: 14px
+    font-weight: bold
+    color: #000
+    margin: 0 auto 23px
+    &:hover
+      color: $accent
+

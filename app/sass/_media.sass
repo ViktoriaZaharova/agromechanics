@@ -25,6 +25,19 @@
   footer .mail
     margin: 20px 0 0
 
+  .menu li a
+    font-size: 11px
+
+  .btn
+    padding: 0 20px
+
+  .logo
+    max-width: 170px
+
+  .certificate-box
+    max-width: 120px
+    height: 180px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .home h1
@@ -83,6 +96,35 @@
   .map
     margin: 30px auto 0
 
+  .btn-burger
+    display: flex
+
+  .list-language
+    margin: 0 20px 0 auto
+
+  header
+    .btn, .menu
+      display: none
+
+  .header .logo
+    max-width: 250px
+
+  .product-image
+    margin: 30px 0 0
+
+  .certificates-brands .btn
+    margin: 10px auto 0
+
+  .callback-wrapper
+    padding: 20px
+    &:before
+      display: none
+    h2
+      margin: 0 auto 30px
+      text-align: center
+
+  .callback-img
+    margin: 0 auto
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -96,20 +138,57 @@
     margin: -60px auto 30px
     padding: 80px 60px 30px
 
+  .menu-catalog
+    margin: 0 0 30px
+
+  .menu-catalog__item
+    margin: 0 0 20px
+
+  .catalog
+    margin: 10px 0 40px
+
+  .parts h3
+    margin: 0 0 30px
+    font-size: 20px
+
+  .certificates-content
+    padding: 20px
+    h3
+      max-width: none
+      width: 100%
+      font-size: 22px
+
+  .certificates-wrapper
+    width: 100%
+    justify-content: space-around
+
+  .certificate-box
+    margin: 20px 0 0
+    &:last-child
+      margin: 20px 0 0
+
+  .certificates
+    margin: 30px 0 50px
+
+  .products-brands h3
+    font-size: 22px
+
+  .callback-wrapper
+    .form
+      margin: 0 auto 20px
+      button
+        margin: 0 auto
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   .home-content:before, .decor
     display: none
 
-  header
-    .menu
-      display: none
+  .header .logo
+    max-width: 150px
 
-  .btn-burger
-    display: flex
-
-  .list-language
-    margin: 0 20px 0 auto
+  header, .header
+    padding: 20px 0
 
   .home-content
     padding: 120px 0 30px
@@ -121,7 +200,7 @@
     margin: 30px 0 0
     justify-content: center
 
-  h2, h1
+  h2, h1, .product h1
     font-size: 35px
     &:before
       height: 3px
@@ -164,7 +243,15 @@
   .address
     max-width: none
 
+  .dealers-row h3
+    font-size: 20px
+    margin: 0 0 20px
 
+  .dealers-row
+    margin: 0 0 20px
+
+  .product-characteristics h2
+    font-size: 30px
 
 @media only screen and (max-width: 480px)
   .logo
@@ -183,8 +270,25 @@
     flex-direction: column
     align-items: center
 
+  .product-information
+    margin: 40px 0
+    strong
+      margin: 0 0 20px
+
+  .mb-50
+    margin-bottom: 30px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
-  .home h1, h2
+  .home h1, h2, .product h1
     font-size: 30px
 
+  .product-image
+    height: 260px
+
+  .product-characteristics h2
+    font-size: 24px
+    margin: 0 0 20px
+
+  .certificates-content:before
+    clip-path: none
