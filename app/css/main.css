@@ -257,13 +257,17 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   z-index: 1;
   opacity: 1;
   bottom: 172px;
-  left: 0; }
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  max-width: 1200px;
+  padding: 0 350px 0 0; }
   .slick-dots li {
     width: 20px;
     height: 20px;
@@ -1363,7 +1367,13 @@ footer {
     max-width: 170px; }
   .certificate-box {
     max-width: 120px;
-    height: 180px; } }
+    height: 180px; }
+  .slick-dots {
+    padding: 0 20px;
+    bottom: 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1539,7 +1549,11 @@ footer {
   .dealers-row {
     margin: 0 0 20px; }
   .product-characteristics h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .slick-dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media only screen and (max-width: 480px) {
   .logo {
