@@ -1,44 +1,26 @@
 @import "vars"
 
 .home-content
-  padding: 237px 0 187px
+  padding: 120px 0
   position: relative
   &:before
     content: ''
     position: absolute
-    right: -28px
+    right: 128px
     top: 0
     background: #fff
     clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%)
     width: 1065px
-    height: calc(100% - 132px)
+    height: 100%
   >*
     position: relative
 
-.decor
-  position: absolute
-  bottom: 0
-  background: #fff
-
-
-.decor1
-  width: 361px
-  height: 132px
-  right: -249px
-  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%)
-
-.decor2
-  width: 192px
-  height: 119px
-  right: -440px
-  bottom: 132px
-  clip-path: polygon(14% 0, 100% 0, 86% 100%, 0% 100%)
 
 .home
   position: relative
   h1
     padding: 0
-    font-size: 54px
+    font-size: 45px
     color: #000
     margin: 0 0 52px
     max-width: 426px
@@ -69,16 +51,12 @@
     margin: 0
     &:after
       display: none
-  .phone
+  a
     font-size: 18px
     color: $accent
     margin: 0 0 8px
     &:last-child
       margin: 0
-  .mail
-    font-size: 14px
-    color: $accent
-    margin: 5px 0 0
   &:after
     content: ''
     display: inline-block

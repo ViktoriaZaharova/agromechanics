@@ -39,16 +39,21 @@
     height: 180px
 
   .slick-dots
-    padding: 0 20px
+    padding: 0 100px 0 0
     bottom: 30px
-    justify-content: flex-start
+
+  .home-content:before
+    right: 70px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .home h1
-    font-size: 40px
+    font-size: 36px
     margin: 0 0 30px
+
+  .contacts-item a
+    font-size: 16px
 
   .logo
     max-width: 250px
@@ -61,9 +66,6 @@
 
   header
     padding: 15px 0
-
-  .home-content
-    padding: 190px 0 150px
 
   .slick-dots
     bottom: 20px
@@ -142,11 +144,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
-  .slick-dots li
-    width: 16px
-    height: 16px
-    margin: 0 10px 0 0
-    border: 1px solid #fff
+  .slick-dots
+    padding: 0 20px 0 0
+    li
+      width: 16px
+      height: 16px
+      margin: 0 10px 0 0
+      border: 1px solid #fff
+
+  .home-content:before
+    right: 200px
+
+  .home h1
+    max-width: 340px
 
   .about-content-wrap-two
     margin: -60px auto 30px
@@ -207,17 +217,29 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
-  .home-content:before, .decor
+  .home-content:before
     display: none
 
   .header .logo
     max-width: 150px
 
+  .home
+    padding: 60px 0 0
+
   header, .header
     padding: 20px 0
+    position: fixed
+    z-index: 3
+    left: 0
+    top: 0
+    width: 100%
+    background: #fff
+
+  .page
+    padding: 120px 0 0
 
   .home-content
-    padding: 120px 0 30px
+    padding: 70px 0 30px
 
     .btn
       margin: 0 auto
@@ -290,6 +312,9 @@
     margin: 0 0 20px
     padding: 0 0 20px
     border-bottom: 2px solid $yellow
+    text-align: center
+    justify-content: center
+    align-items: center
     &:last-child
       border: none
     &:after

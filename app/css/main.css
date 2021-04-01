@@ -262,7 +262,7 @@ h2 {
           justify-content: flex-end;
   z-index: 1;
   opacity: 1;
-  bottom: 172px;
+  bottom: 30px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -602,46 +602,26 @@ footer {
   margin: 0 0 0 auto; }
 
 .home-content {
-  padding: 237px 0 187px;
+  padding: 120px 0;
   position: relative; }
   .home-content:before {
     content: '';
     position: absolute;
-    right: -28px;
+    right: 128px;
     top: 0;
     background: #fff;
     -webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
     width: 1065px;
-    height: calc(100% - 132px); }
+    height: 100%; }
   .home-content > * {
     position: relative; }
-
-.decor {
-  position: absolute;
-  bottom: 0;
-  background: #fff; }
-
-.decor1 {
-  width: 361px;
-  height: 132px;
-  right: -249px;
-  -webkit-clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
-          clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%); }
-
-.decor2 {
-  width: 192px;
-  height: 119px;
-  right: -440px;
-  bottom: 132px;
-  -webkit-clip-path: polygon(14% 0, 100% 0, 86% 100%, 0% 100%);
-          clip-path: polygon(14% 0, 100% 0, 86% 100%, 0% 100%); }
 
 .home {
   position: relative; }
   .home h1 {
     padding: 0;
-    font-size: 54px;
+    font-size: 45px;
     color: #000;
     margin: 0 0 52px;
     max-width: 426px;
@@ -686,16 +666,12 @@ footer {
     margin: 0; }
     .contacts-item:last-child:after {
       display: none; }
-  .contacts-item .phone {
+  .contacts-item a {
     font-size: 18px;
     color: #559C4F;
     margin: 0 0 8px; }
-    .contacts-item .phone:last-child {
+    .contacts-item a:last-child {
       margin: 0; }
-  .contacts-item .mail {
-    font-size: 14px;
-    color: #559C4F;
-    margin: 5px 0 0; }
   .contacts-item:after {
     content: '';
     display: inline-block;
@@ -1369,17 +1345,18 @@ footer {
     max-width: 120px;
     height: 180px; }
   .slick-dots {
-    padding: 0 20px;
-    bottom: 30px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; } }
+    padding: 0 100px 0 0;
+    bottom: 30px; }
+  .home-content:before {
+    right: 70px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .home h1 {
-    font-size: 40px;
+    font-size: 36px;
     margin: 0 0 30px; }
+  .contacts-item a {
+    font-size: 16px; }
   .logo {
     max-width: 250px; }
   .header .menu li a {
@@ -1388,8 +1365,6 @@ footer {
     margin: 20px 0 0; }
   header {
     padding: 15px 0; }
-  .home-content {
-    padding: 190px 0 150px; }
   .slick-dots {
     bottom: 20px; }
   .about-img-wrap-one {
@@ -1447,11 +1422,17 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .slick-dots li {
-    width: 16px;
-    height: 16px;
-    margin: 0 10px 0 0;
-    border: 1px solid #fff; }
+  .slick-dots {
+    padding: 0 20px 0 0; }
+    .slick-dots li {
+      width: 16px;
+      height: 16px;
+      margin: 0 10px 0 0;
+      border: 1px solid #fff; }
+  .home-content:before {
+    right: 200px; }
+  .home h1 {
+    max-width: 340px; }
   .about-content-wrap-two {
     margin: -60px auto 30px;
     padding: 80px 60px 30px; }
@@ -1497,14 +1478,24 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
-  .home-content:before, .decor {
+  .home-content:before {
     display: none; }
   .header .logo {
     max-width: 150px; }
+  .home {
+    padding: 60px 0 0; }
   header, .header {
-    padding: 20px 0; }
+    padding: 20px 0;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff; }
+  .page {
+    padding: 120px 0 0; }
   .home-content {
-    padding: 120px 0 30px; }
+    padding: 70px 0 30px; }
     .home-content .btn {
       margin: 0 auto; }
   .contacts-wrapper {
@@ -1561,7 +1552,14 @@ footer {
   .contacts-item {
     margin: 0 0 20px;
     padding: 0 0 20px;
-    border-bottom: 2px solid #FFE600; }
+    border-bottom: 2px solid #FFE600;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .contacts-item:last-child {
       border: none; }
     .contacts-item:after {
