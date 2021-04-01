@@ -157,6 +157,10 @@
 
   .home h1
     max-width: 340px
+    font-size: 28px
+
+  .contacts-item a
+    font-size: 14px
 
   .about-content-wrap-two
     margin: -60px auto 30px
@@ -224,7 +228,13 @@
     max-width: 150px
 
   .home
+    position: relative
     padding: 60px 0 0
+    h1
+      max-width: none
+      font-size: 24px
+      margin: 0 auto 30px
+      text-align: center
 
   header, .header
     padding: 20px 0
@@ -252,14 +262,6 @@
     font-size: 35px
     &:before
       height: 3px
-
-  .home
-    position: relative
-
-    h1
-      text-align: center
-      margin: 0 auto 30px
-      font-size: 35px
 
   .home-slider
     position: relative
@@ -303,6 +305,7 @@
 
   .slick-dots
     justify-content: center
+    padding: 0 15px
 
 @media only screen and (max-width: 480px)
   .logo
@@ -332,9 +335,13 @@
   .mb-50
     margin-bottom: 30px
 
+  .home
+    h1
+      font-size: 22px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
-  .home h1, h2, .product h1
+  h2, .product h1
     font-size: 30px
 
   .product-image

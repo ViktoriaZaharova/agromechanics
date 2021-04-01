@@ -621,7 +621,7 @@ footer {
   position: relative; }
   .home h1 {
     padding: 0;
-    font-size: 45px;
+    font-size: 40px;
     color: #000;
     margin: 0 0 52px;
     max-width: 426px;
@@ -1432,7 +1432,10 @@ footer {
   .home-content:before {
     right: 200px; }
   .home h1 {
-    max-width: 340px; }
+    max-width: 340px;
+    font-size: 28px; }
+  .contacts-item a {
+    font-size: 14px; }
   .about-content-wrap-two {
     margin: -60px auto 30px;
     padding: 80px 60px 30px; }
@@ -1483,7 +1486,13 @@ footer {
   .header .logo {
     max-width: 150px; }
   .home {
+    position: relative;
     padding: 60px 0 0; }
+    .home h1 {
+      max-width: none;
+      font-size: 24px;
+      margin: 0 auto 30px;
+      text-align: center; }
   header, .header {
     padding: 20px 0;
     position: fixed;
@@ -1507,12 +1516,6 @@ footer {
     font-size: 35px; }
     h2:before, h1:before, .product h1:before {
       height: 3px; }
-  .home {
-    position: relative; }
-    .home h1 {
-      text-align: center;
-      margin: 0 auto 30px;
-      font-size: 35px; }
   .home-slider {
     position: relative; }
   .about-content-wrap {
@@ -1544,7 +1547,8 @@ footer {
   .slick-dots {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center;
+    padding: 0 15px; } }
 
 @media only screen and (max-width: 480px) {
   .logo {
@@ -1577,11 +1581,13 @@ footer {
     .product-information strong {
       margin: 0 0 20px; }
   .mb-50 {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .home h1 {
+    font-size: 22px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
-  .home h1, h2, .product h1 {
+  h2, .product h1 {
     font-size: 30px; }
   .product-image {
     height: 260px; }
