@@ -25,4 +25,6 @@ $('.submenu li a').each(function () {
 });
 // end
 
+new WOW().init();
+
 $('[name="phone"]').mask('+7 (999) 999-99-99');
